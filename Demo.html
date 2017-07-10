@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CYDiaiogDemo</title>
+</head>
+
+
+<body>
+</body>
+<script src="CYDiaiog/CYDiaiog.js" type="text/javascript"></script>
+<script>
+
+    //可以链式语法来调用
+    CYDiaiog.init('550px','350px').show('这是链式语法弹出的' , './Child.html' , function func(result) {
+        console.log(result);
+    }).expressObj({'key1':'value1' , 'key2':'value2'});
+
+    //也可以普通调用
+   // CYDiaiog.init('550px','350px');
+   // CYDiaiog.show('这是普通语法弹出的' , './Child.html' , function func(result) {
+   //     console.log(result);
+   // });
+   // CYDiaiog.expressObj({'key1':'value1' , 'key2':'value2'});
+
+</script>
+</html>
