@@ -12,7 +12,7 @@
 
 
 <p>原生js写的轻量级对话层，不依赖任何库或框架。</p></br>
-<!-- <img src="http://upload-images.jianshu.io/upload_images/2028853-3486b3efe1e179a3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></br> -->
+<img src="http://upload-images.jianshu.io/upload_images/2028853-3ed06fa8e0ae5bb0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></br>
 
 ## 一.  功能简介 - Introduction
 
