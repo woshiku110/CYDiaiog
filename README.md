@@ -27,14 +27,14 @@
 <script type="text/javascript" src="xxx/CYDiaiog/CYDiaiog.js"></script>
 ```
 
-#### 链式语法
+#### 链式语法,调用
 ```
 CYDiaiog.init('550px','350px').show('这是链式语法弹出的' , './Child.html' , function func(result) {
       console.log(result);
 }).expressObj({'key1':'value1' , 'key2':'value2'});
 ```
 
-#### 普通语法
+#### 普通语法,调用
 ```
 CYDiaiog.init('550px','350px');
 CYDiaiog.show('这是普通语法弹出的' , './Child.html' , function func(result) {
@@ -43,8 +43,17 @@ CYDiaiog.show('这是普通语法弹出的' , './Child.html' , function func(res
 CYDiaiog.expressObj({'key1':'value1' , 'key2':'value2'});
 ```
 
-#### 更多用法请看Demo
+#### 给子ifame页面传值
+```
+比如，在value里可以把当前document传过去，这样子页面就可以调用父页面的方法
+CYDiaiog.expressObj({'key1':'value1' , 'key2':'value2'});
+```
 
+#### 子ifame获取传来的值
+```
+var data = parent.window.CYDiaiogBuffer.expressData;
+console.log('快递的对象为: ',data);
+```
 
 ## 三.  更新历史 - Update History
 暂无
